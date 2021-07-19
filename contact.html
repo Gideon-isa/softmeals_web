@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom4.css">
+    <meta name="description" content="Softmeals Chocolate & Coffee Shop">
+    <meta name="keywords" content="Coffee, Arabic coffee beans, teas, soft drinks, juices, chocolates, delicious, cakes and biscuits, snacks, picnics, sandwiches, pastries, salads, lekki">
+    <title>Softmeals Chocolate & Coffee Shop</title>
+    <link rel="shortcut icon" href="images/fast-food.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="/images/cutlery.png" alt="company logo" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menulist.html">Menu List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bookatable.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menulist.html">Menu List</a>
+        </li>
+        <li class="nav-item social-media">
+          <a class="nav-item" href="#"><img src="/images/instagram.png" alt=""></a>
+        </li>
+        <li class="nav-item social-media">
+          <a class="nav-item" href="#"><img src="/images/twitter.png" alt=""></a>
+        </li>
+        <li class="nav-item social-media">
+          <a class="nav-item" href="#"><img src="/images/facebook.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <h1>How May We Help</h1>
+    <h2>Drop your details and We get to you within 24hrs</h2>
+    <form action="# mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 form-group">
+          <input type="text" id="title" placeholder="Your Title eg. Mr, Mrs etc"  class="form-control  title" onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12 col-md-6 form-group">
+          <input type="text" id="firstname" placeholder="Your First Name" class="form-control" onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+        </div>
+  
+        <div class="col-sm-12 col-md-6 form-group">
+          <input type="text" id="lasttname" placeholder="Your Last Name" class="form-control" onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+        </div>
+  
+        <div class="col-sm-12 col-md-6 form-group">
+          <input type="tel" name="phoneNo" id="phoneno" placeholder="Your Phone No." class="form-control" onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+        </div>
+  
+        <div class="col-sm-12 col-md-6">
+          <input type="email" name="email" id="email" placeholder="Your Email Address" class="form-control" onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+                        
+          <input type="submit" value="submit" id="submit" class="btn btn-warning form-control" >
+            
+        </div>
+      </div>
+
+  
+    </form>
+  </div>
+  
+  <footer class="mt-5">
+    <div class="connect">
+      <h3>WE ARE SOCIAL</h3>
+      <h4>CONECT WITH US </h4>
+    </div>
+
+
+    <div class="social-links mb-4">
+      <ul>
+        <li><a href="#"><img src="/images/instagram.png" alt="instagram logo"></a></li>
+        <li><a href="#"><img src="/images/twitter.png" alt="twitter logo"></a></li>
+        <li><a href="#"></a><img src="/images/facebook.png" alt="facebook"></li>
+      </ul>
+    </div>
+    <hr>
+  
+      <div class="copy-right">
+        &copy;2021. POWERED BY <span>SOFTMEALS CHOCOLATE AND COFFEE SHOP</span>
+      </div>
+
+  </footer>
+
+
+  <script>
+        let title = document.getElementById("title");
+        let firstName = document.getElementById("firstname");
+        let lastName = document.getElementById("lasttname");
+        let phone = document.getElementById("phoneno");
+        let email = document.getElementById("email");
+
+
+        title.addEventListener("click", titleName);
+        firstName.addEventListener("click", fullName);
+        lastName.addEventListener("click", fullName);
+        phone.addEventListener("click", phoneNo);
+        email.addEventListener("click", email);
+;
+
+        function changeBgColor (element, bgColor){
+            element.style.backgroundColor = bgColor;
+        }
+
+        function restoreBgColor (element, bgColor){
+            element.style.backgroundColor = bgColor;
+        }
+
+        function changeColor (element, Color){
+            element.style.backgroundColor = Color;
+        }
+
+        function changeColor2 (element, color){
+            element.style.backgroundColor = color;
+        }
+  </script>
+</body>
+</html>

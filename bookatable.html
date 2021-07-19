@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom5.css">
+    <meta name="description" content="Softmeals Chocolate & Coffee Shop">
+    <meta name="keywords" content="Coffee, Arabic coffee beans, teas, soft drinks, juices, chocolates, delicious, cakes and biscuits, snacks, picnics, sandwiches, pastries, salads, lekki">
+    <title>Softmeals Chocolate & Coffee Shop</title>
+    <link rel="shortcut icon" href="images/fast-food.png" type="image/x-icon">
+    <title>Book A Table</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="/images/cutlery.png" alt="company logo" ></a>
+        <h3>Softmeals Chocolate & Coffee Shop</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menulist.html">Menu List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Menu List</a>
+            </li>
+            <li class="nav-item social-media">
+              <a class="nav-item" href="#"><img src="/images/instagram.png" alt=""></a>
+            </li>
+            <li class="nav-item social-media">
+              <a class="nav-item" href="#"><img src="/images/twitter.png" alt=""></a>
+            </li>
+            <li class="nav-item social-media">
+              <a class="nav-item" href="#"><img src="/images/facebook.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <h1><span>Book A Table</span></h1>
+        <p class="content text-warning">
+            Come dine with us at Softmeals Chocolate & Coffee Shop. Our kitchen serves well crafted and delicious dishes, with a diverse menu that has something for everyone. Our produce are of the highest quality and we are committed to the best standards. One of our own is an acclaimed and celebrated Chef -Joshua Ekpe.
+            Booking a table online to dine with us is easy and will take just a couple of minutes. All you need to do is fill the booking form below
+        </p>
+
+        <h3>SUBMIT YOUR DETAILS AND WE WILL GET TO YOU </h3>
+    </div>
+
+    <section class="container mb-5">
+        <div class="row mt-5 mb-4" >
+            <div class="col-sm-12 col-md-6 chef">
+                <div class="name">h4>Our Chef</h4></div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <h1>Form</h1>
+                <form action="#">
+                    <div class="firstname form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Full Name"  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+                    </div>
+
+                    <div class="tel form-group">
+                        <input type="text" id="tel" class="form-control" placeholder="+234.."  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <input type="date" id="date" class="form-control"  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 form-group">
+                            
+                          <input type="number" name="guest" id="guest" placeholder="Number of Guest" class="form-control"  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 form-group">
+                        
+                       <input type="time" name="time" id="time" class="form-control"  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')" required> 
+                        
+                    </div>
+
+                    <div class="col-sm-12 form-group">
+                        
+                      <input type="submit" value="submit" id="submit" class="btn btn-warning form-control"  onclick="changeBgColor(this, 'goldenrod')" onblur="restoreBgColor(this, 'white')" onmouseover="changeColor(this, 'goldenrod')" onmouseout="changeColor2(this, 'white')">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="connect">
+            <h3>WE ARE SOCIAL</h3>
+            <h4>CONNECT WITH US </h4>
+        </div>
+
+  
+        <div class="social-links mt-4">
+          <ul>
+            <li><a href="#"><img src="/images/instagram.png" alt="instagram logo"></a></li>
+            <li><a href="#"><img src="/images/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#"></a><img src="/images/facebook.png" alt="facebook"></li>
+          </ul>
+        </div>
+        <hr>
+      
+          <div class="copy-right">
+            &copy;2021. POWERED BY <span>SOFTMEALS CHOCOLATE AND COFFEE SHOP</span>
+          </div>
+  
+      </footer>
+
+    <script>
+        let name = document.getElementById("name");
+        let tel = document.getElementById("tel");
+        let date = document.getElementById("date");
+        let guest = document.getElementById("guest");
+        let time = document.getElementById("time");
+
+
+        name.addEventListener("click", fullName);
+        tel.addEventListener("click", phoneNo);
+        date.addEventListener("click", dateTime);
+        guest.addEventListener("click", guestNo);
+        time.addEventListener("click", timeNo);
+
+        
+        function changeBgColor (element, bgColor){
+            element.style.backgroundColor = bgColor;
+        }
+
+        function restoreBgColor (element, bgColor){
+            element.style.backgroundColor = bgColor;
+        }
+
+        function changeColor (element, Color){
+            element.style.backgroundColor = Color;
+        }
+
+        function changeColor2 (element, color){
+            element.style.backgroundColor = color;
+        }
+
+    </script>
+
+</body>
+</html>  
